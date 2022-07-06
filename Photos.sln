@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photos.Api", "Photos.Api\Photos.Api.csproj", "{920FF2AE-4F86-47B3-A2F0-61C50B774D2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photos.Web", "Photos.Web\Photos.Web.csproj", "{1D7DBECC-83F0-4CFF-945A-C660D724B4A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{920FF2AE-4F86-47B3-A2F0-61C50B774D2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{920FF2AE-4F86-47B3-A2F0-61C50B774D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{920FF2AE-4F86-47B3-A2F0-61C50B774D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{920FF2AE-4F86-47B3-A2F0-61C50B774D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D7DBECC-83F0-4CFF-945A-C660D724B4A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D7DBECC-83F0-4CFF-945A-C660D724B4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D7DBECC-83F0-4CFF-945A-C660D724B4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D7DBECC-83F0-4CFF-945A-C660D724B4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {030C29C5-E7F6-4D43-B1B3-C798A0ED4DC3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+﻿@page "/"
+@inject HttpClient Http
+@inject IConfiguration Configuration
+
+<PageTitle>Photography App</PageTitle>
+
+<h1>Welcome to Photos!</h1>
+
+@if (photoKeys == null)
+{
+    <p><em>Loading photos...</em></p>
+}
+else
+{
+    <div class="feed">
+        @foreach (var photoKey in photoKeys)
+        {
+            <div class="post">
+                <div class="post-header">
+                    <img src="moi.jpg"/>
+                    <p>Vivamus et interdum purus, porta molestie sem. Suspendisse potenti. Proin egestas turpis quis tortor condimentum ullamcorper. Ut iaculis ultrices lorem sit amet porttitor. Ut ac.</p>
+                </div>
+                <img class="photo" src="@($"{imageBaseAddress}{photoKey}")" />
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private string imageBaseAddress = default!;
+    private IEnumerable<string>? photoKeys;
+
+    protected override async Task OnInitializedAsync()
+    {
+        imageBaseAddress = Configuration.GetValue<string>("ImageBucketBaseAddress");
+        photoKeys = await Http.GetFromJsonAsync<IEnumerable<string>>("/photos");
+    }
+}
